@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>India Weather</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="background" id="background"></div>
+  <div class="overlay"></div>
+  <div class="container">
+    <header>
+      <span style="font-size: 2rem;">☁️</span>
+      <h1>India Weather</h1>
+    </header>
+
+    <main>
+      <div class="city-title" id="cityTitle" style="display: none;">
+        <h2 id="cityName"></h2>
+        <p id="stateName"></p>
+      </div>
+
+      <div class="glass-card weather-card" id="weatherCard">
+        <div class="weather-icon float" id="weatherIcon">🌤️</div>
+        <div class="temperature" id="temperature">--°</div>
+        <div class="description" id="description">Select a city</div>
+        <div class="weather-details" id="weatherDetails" style="display: none;">
+          <div class="detail-item">
+            <div class="detail-icon">🌡️</div>
+            <span class="detail-label">Feels like</span>
+            <span class="detail-value" id="feelsLike">--°</span>
+          </div>
+          <div class="detail-item">
+            <div class="detail-icon">💧</div>
+            <span class="detail-label">Humidity</span>
+            <span class="detail-value" id="humidity">--%</span>
+          </div>
+          <div class="detail-item">
+            <div class="detail-icon">💨</div>
+            <span class="detail-label">Wind</span>
+            <span class="detail-value" id="windSpeed">-- km/h</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="glass-card selector-wrapper">
+        <select class="city-select" id="citySelect">
+          <option value="">Select a city</option>
+        </select>
+      </div>
+
+      <div class="glass-card location-info" id="locationInfo" style="display: none;">
+        <h3 id="famousSpot"></h3>
+        <p id="spotDescription"></p>
+      </div>
+    </main>
+
+    <footer>
+      Weather across India's most beautiful cities!
+    </footer>
+  </div>
+
+   <script src="script.js"></script>
+</body>
+</html>

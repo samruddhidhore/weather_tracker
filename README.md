@@ -17,7 +17,7 @@ and tourist information for cities across India. .
 
 # Project Structure
     /project-folder
-    │── index2.html      # Main webpage
+    │── index.html      # Main webpage
     │── style.css        # UI styling and animations
     │── script.js        # Logic for weather API & city list
     │── README.md        # Project documentation
